@@ -17,6 +17,11 @@ Var is a global scope variable when we declare outside any function . This means
 
 # Data Types  :
 
+🔵 Primitive = > Number , String , Boolean , null , undefined ,Symbol , Bigint 
+
+🔵 Non Primitive (Refrence Type ) = >   Array , Object ,  function 
+
+
  Number : store only number value .
  
  bigint : Store large value of integer type .
