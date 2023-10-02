@@ -38,3 +38,59 @@ Var is a global scope variable when we declare outside any function . This means
 
  object : 
 
+
+# Array :
+
+JavaScript Array is a single variable that is used to store elements of different data types. JavaScript arrays are zero-indexed. The Javascript Arrays are not associative in nature.
+Arrays are used when we have a list of items. An array allows you to store several values with the same name and access them by using their index
+
+# Methods 
+
+* push() => add elements to end of the array 
+
+* pop() => remove elements to end of the array
+
+* unshift() => add elements to start of the array 
+
+* shift() => remove elements to start of the array
+
+* includes() => return true or false based on operation of finding elements .
+
+* indexOf() => return the index of elements 
+
+* join() => join the array elements by commas and pipes .
+
+* slice() => return the elements method returns selected elements in an array, as a new array.
+The slice() method selects from a given start, up to a (not inclusive) given end.
+
+
+### Methods ( iterative)
+
+* every()
+
+* filter()
+
+* find()
+
+* findIndex()
+
+* findLast()
+
+* findLastIndex()
+
+* flatMap()
+
+* forEach()
+
+* map()
+
+* some()
+
+
+# Shallow Copy 
+
+A shallow copy of an object is a copy whose properties share the same references (point to the same underlying values) as those of the source object from which the copy was made. As a result, when you change either the source or the copy, you may also cause the other object to change too.
+
+# Deep copy 
+
+A deep copy of an object is a copy whose properties do not share the same references (point to the same underlying values) as those of the source object from which the copy was made. As a result, when you change either the source or the copy, you can be assured you're not causing the other object to change too. 
