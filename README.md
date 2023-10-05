@@ -94,3 +94,81 @@ A shallow copy of an object is a copy whose properties share the same references
 ## Deep copy 
 
 A deep copy of an object is a copy whose properties do not share the same references (point to the same underlying values) as those of the source object from which the copy was made. As a result, when you change either the source or the copy, you can be assured you're not causing the other object to change too. 
+
+
+## Scope (Local Vs Global )
+
+### Scope : 
+
+The scope is the current context of execution in which values and expressions are "visible" or can be referenced. If a variable or expression is not in the current scope, it will not be available for use.
+
+
+JavaScript has 3 types of scope:
+
+* Block scope
+* Function scope
+* Global scope
+
+### Global Scope: 
+
+The default scope for all code running in script mode.
+```
+const x = "declared outside function";
+
+exampleFunction();
+
+function exampleFunction() {
+  console.log("Inside function");
+  console.log(x);
+}
+
+console.log("Outside function");
+console.log(x);
+```
+
+### Block Scope : 
+
+Variables declared inside a { } block cannot be accessed from outside the block.
+
+```bash 
+{
+  var x = 1;
+}
+console.log(x); // 1
+```
+
+
+
+
+### Function Scope 
+
+A function creates a scope, so that (for example) a variable defined exclusively within the function cannot be accessed from outside the function or within other functions. 
+
+```
+function exampleFunction() {
+  const x = "declared inside function"; // x can only be used in exampleFunction
+  console.log("Inside function");
+  console.log(x);
+}
+
+console.log(x); // Causes error
+```
+
+
+## Immediately Invoked Function Invocatoion Expression  (IIFE)
+
+An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined.
+
+`(function () {
+  // code 
+})();`
+
+
+
+## JavaScript Execution Context 
+
+* Global Execution Context
+
+* Function Execution Context
+
+* Eval Execution Context
