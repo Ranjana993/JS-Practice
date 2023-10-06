@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating elements </title>
+</head>
+
+<body style="background-color: #212121; color: white;">
+
+</body>
+
+<script>
+    const divContainer = document.createElement("div")
+    divContainer.className = "container";
+    divContainer.innerHTML = "This is creating containers ";
+    // document.write(divContainer)
+    const textNode = document.createTextNode("Learing ")
+    divContainer.appendChild(textNode)
+    document.body.appendChild(divContainer)
+</script>
+</html>

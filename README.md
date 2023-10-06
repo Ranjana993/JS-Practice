@@ -172,3 +172,20 @@ An IIFE (Immediately Invoked Function Expression) is a JavaScript function that 
 * Function Execution Context
 
 * Eval Execution Context
+
+
+
+
+# DOM MANIPULATION
+
+* document 
+
+* ducument.getElementById()
+
+* ducument.getElementByClassName()
+
+* * ducument.querySelector()
+
+*  ducument.querySelectorAll()
+
+* childNode();

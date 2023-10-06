@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: #212121; color: white;">
+    <ul class="Language">
+        <li>JavaScript</li>
+    </ul>
+
+</body>
+<script>
+    function addLang1(langName) {
+        const parent = document.querySelector(".Language");
+        const li = document.createElement("li");
+        li.innerHTML = `${langName}`;  //first way 
+        // li.appendChild(document.createTextNode(langName))  //second way
+        parent.appendChild(li)
+    }
+    addLang1("Golang");
+
+
+    function addLang2(langName) {
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector(".Language").appendChild(li)
+    }
+    addLang2("python");
+    addLang2("Jeera");
+
+    // EDIT 
+    const secondLang = document.querySelector("li:nth-child(2)");
+    // secondLang.innerHTML = "Mojo";
+    const newLi = document.createElement('li')
+    newLi.textContent = "Mojo Jojo";
+    secondLang.replaceWith(newLi)
+
+// delete 
+const lastElement = document.querySelector("li:last-child");
+lastElement.remove()
+
+</script>
+
+</html>
