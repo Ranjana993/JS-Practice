@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to left, rgb(73, 73, 152), rgb(107, 54, 132), rgb(134, 134, 238));
+}
+
+.container {
+    background-color: #fff;
+    width: 60%;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.title_of_the_game {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: gray;
+}
+
+h1 {
+    margin: 1rem 0;
+    font-size: 2.4rem;
+    color: purple;
+}
+
+form>input {
+    width: 23%;
+    margin: 0 0 1rem 0;
+    height: 2rem;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+/* form>input::before {
+    border: 2px solid purple;
+} */
+
+
+form>button {
+    background: linear-gradient(to left, rgb(73, 73, 152), rgb(107, 54, 132), rgb(134, 134, 238));
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid purple;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+h3{
+    margin-top: 1rem;
+}
+h3 , h2 {
+    line-height: 1.4;
+    color: rgb(98, 70, 98);
+
+}
