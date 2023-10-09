@@ -189,3 +189,59 @@ An IIFE (Immediately Invoked Function Expression) is a JavaScript function that 
 *  ducument.querySelectorAll()
 
 * childNode();
+
+
+
+# Events 
+
+* type
+
+* timeStamp
+
+* defaultPrevented
+
+* target
+
+* toElement
+
+* srcElement
+
+* currentTarget
+
+* clientX
+
+* clientY
+
+* screenX
+
+* screenY
+
+* altKey
+
+* ctrlKey
+
+* shiftKey
+
+* keyCode
+
+
+
+
+### Bubbling : 
+
+### Capturing : 
+
+
+
+## Async in Js
+
+### Blocking         Vs       Non Blocking 
+
+ Blocking: 
+    * Block the flow of program
+    * Read the file sync
+
+
+Non Blocking 
+    * do not block the execution 
+    * Read file async

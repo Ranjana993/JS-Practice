@@ -1,0 +1,28 @@
+body {
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    background: linear-gradient(rgb(131, 109, 199), #9718ad);
+    padding: 2rem;
+    margin-top: 4rem;
+    box-shadow: 1px 1px 23px 1px #000;
+}
+
+.btns button {
+    background-color: rgb(170, 101, 23);
+    width: 70px;
+    height: 40px;
+    border-radius: 12px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid grey;
+    color: white;
+    font-weight: 600;
+    margin-top: 2rem;
+
+}
