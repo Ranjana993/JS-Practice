@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(to right, rgb(188, 14, 14), rgb(184, 52, 74));
+        }
+
+
+        #card {
+            width: 45%;
+            background-color: rgb(109, 109, 167);
+            text-align: center;
+            /* height: 4rem; */
+            padding: 1rem;
+            margin: 3rem auto;
+            box-shadow: 1px 1px 23px 1px #000;
+            /* display: block; */
+            display: none;
+        }
+
+        img {
+            height: 150px;
+            width: 150px;
+            border-radius: 100%;
+        }
+
+        .info {
+            line-height: 1;
+        }
+
+        #btn {
+            width: 19%;
+            margin: auto;
+            margin-top: 12%;
+        }
+
+        button {
+            background-color: lightgreen;
+            height: 45px;
+            border: 1px solid gray;
+            color: green;
+            font-weight: 700;
+            font-size: 1.2rem;
+            border-radius: 12px;
+            cursor: pointer;
+            text-align: center;
+            width: 100%;
+            /* display: none; */
+
+        }
+
+        button:hover {
+            border: 2px solid green;
+            color: black;
+            background-color: transparent;
+        }
+
+        @media only screen and (max-width: 600px) {
+            button {
+                background-color: lightgreen;
+                /* height: 45px; */
+                border: 1px solid gray;
+                color: green;
+                font-weight: 700;
+                font-size: 12px;
+                border-radius: 12px;
+                cursor: pointer;
+                text-align: center;
+                width: 100%;
+
+            }
+
+            #btn {
+                width: 23%;
+                margin: auto;
+                margin-top: 12%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container"> -->
+    <div id="card">
+
+    </div>
+    <div id="btn">
+        <button>Click to see your info </button>
+    </div>
+
+
+    <!-- </div> -->
+
+
+
+
+
+</body>
+<script>
+    const url = "https://api.github.com/users/Ranjana993"
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', url)
+    let res;
+    xhr.onreadystatechange = function () {
+        console.log(xhr.readyState);
+        if (xhr.readyState === 4) {
+            res = JSON.parse(this.responseText)
+            console.log(res);
+        }
+    }
+    xhr.send()
+
+    const btn = document.querySelector("button")
+    btn.addEventListener("click", function () {
+        const card = document.getElementById("card")
+        card.style.display = "block"
+        btn.style.display = "none"
+        card.innerHTML = `
+            <div class="img">
+            <img src=${res.avatar_url}
+                alt="img">
+            </div>
+            <div class="info">
+                <h3>Name :&nbsp;${res.name} </h3>
+                <h5>Followers :&nbsp;${res.followers} </h5>
+                <h4>Location : ${res.location} </h4>
+                <p>${res.bio} </p>
+            </div>
+        `
+    })
+
+
+
+</script>
+
+</html>
